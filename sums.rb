@@ -11,7 +11,9 @@
 class Sum1
     attr_accessor :total
     def initialize(num1,num2)
-      @total = num1+num2
+      @num1 = num1
+      @num2 = num2
+      @total = num1 + num2
     end 
 end
 class Sum2
@@ -20,15 +22,18 @@ class Sum2
     @b = b
   end 
   def new_total
-    @sum = @a + @b
-    puts "sum#{sum}"
-    return @sum
+    return @a + @b
   end 
 end
+
 suma1 = Sum1.new(5,6)
 suma2 = Sum2.new(5,6)
+puts suma1.total
+puts suma2.new_total
 puts "suma1= #{suma1}"
 puts "suma2= #{suma2}"
-#suma = Sum2.new_total
-#puts "suma es igual a #{suma}"
+
+
+
+
 

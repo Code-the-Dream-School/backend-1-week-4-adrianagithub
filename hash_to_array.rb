@@ -16,20 +16,20 @@
     input_value = gets.chomp
     hash[input_key]= input_value.to_s
   end
-  puts "hash #{hash}"
+  #puts "hash #{hash}"
 
   def print_hash(hash)
     array_key = []
     array_value = []
     hash.each do |input_key, input_value|
-      puts "The hash keys are #{input_key} "
+      #puts "The hash keys are #{input_key} "
       array_key.push(input_key).to_s+","
-      puts "and the values are #{input_value}."
+      #puts "and the values for the hash are #{input_value}."
       array_value.push(input_value).to_s+","
     end
-    #print "array keys#{array_key}"
-    #print "#array value#{array_value}"  
+    print "array keys#{array_key}"
+    print "#array value#{array_value}"  
     hash
   end
 
-print_hash(hash)
+print_hash (hash)
